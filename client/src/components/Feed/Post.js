@@ -16,7 +16,7 @@ import Heading from "components/Typography/Heading";
 import TextAvatar from "components/TextAvatar";
 import SubMenuButton from "components/Button/SubMenuButton";
 import { typeToTag } from "assets/data/formToPostMappings";
-import { StyledButtonWizard } from "components/StepWizard/WizardFormNav";
+import { StyledWizard } from "components/StepWizard";
 import WizardFormNav from "components/StepWizard/WizardFormNav";
 // Icons
 import SvgIcon from "../Icon/SvgIcon";
@@ -236,7 +236,7 @@ const Post = ({
   );
 
   return (
-    <>
+    <div>
       <PostCard
         style={
           postId
@@ -296,12 +296,12 @@ const Post = ({
           cancelText="Cancel"
         >
           <p>Are you sure you want to delete the post?</p>
-        </WebModal>
-        {postId && 
-        <StyledButtonWizard nav={<WizardFormNav />}></StyledButtonWizard>
-        }   
+        </WebModal>  
       </PostCard>
-    </>
+      {postId && 
+        <StyledWizard nav={<WizardFormNav />}></StyledWizard>
+      } 
+    </div>
   );
 };
 
