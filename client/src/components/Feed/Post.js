@@ -16,7 +16,7 @@ import Heading from "components/Typography/Heading";
 import TextAvatar from "components/TextAvatar";
 import SubMenuButton from "components/Button/SubMenuButton";
 import { typeToTag } from "assets/data/formToPostMappings";
-import { StyledWizard } from "components/StepWizard";
+import { StyledWizard } from "components/StepWizard/StyledWizard";
 import WizardFormNav from "components/StepWizard/WizardFormNav";
 // Icons
 import SvgIcon from "../Icon/SvgIcon";
